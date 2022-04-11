@@ -14,16 +14,17 @@
     <title>Página de Start BCW18</title>
 </head>
 
-<body style="font-family: roboto;">
+<body>
     <header>
-        <nav>
-            <a href="#somos">Quem somos neste <strong>BCW18</strong></a> |
-            <a href="#cronograma">Cronograma do <strong>BCW18</strong>.</a> |
-            <a href="#dicas">Dicas do team <strong>BCW18</strong>.</a> |
-            <a href="#trabalho">Orientações de Trabalho como Dev.</a>
+        <ul>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#trajetoria">Trajetória</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#trabalho">Orientações</a></li>
+        </ul>
     </header>
     <main>
-        <div style="width: 650px;">
+        <div class="divisorbase" id="trajetoria">
             <h1>Trajetória de Sucesso</h1>
             <table>
                 <tr>
@@ -73,7 +74,7 @@
                 </tr>
             </table>
         </div>
-        <div>
+        <div class="divisorbase" id="cadastro">
             <form action="#" method="">
                 <div>
                     <input type="hidden" id="id">
@@ -109,6 +110,19 @@
                     <input type="radio" name="escolaridade" id="escolaridade"> Pós Graduado <br>
                     <input type="radio" name="escolaridade" id="escolaridade"> Mestrado <br>
                     <input type="radio" name="escolaridade" id="escolaridade"> Doutorado <br>
+                </div>
+                <div>
+                    <label for="experiencia">Qual foi sua experiencia com programação: </label>
+                    <input type="range" id="experiencia" min="5" max="50" oninput="display.value=value" onchange="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value" onchange="experiencia.value=value" maxlength="3" size="3">
+                </div>
+                <div>
+                    <label for="descricao">Descrição da Experiência: </label> <br>
+                    <textarea id="descricao" cols="70" rows="5" placeholder="Descreva as tecnologias conhecidas..."></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
                 </div>
             </form>
         </div>

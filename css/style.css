@@ -1,0 +1,16 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.divisorbase {
+    background-color: aliceblue;
+    width: 720px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 15px;
+}
