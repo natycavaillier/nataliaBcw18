@@ -5,12 +5,67 @@ body {
     border: 0;
 }
 
-.divisorbase {
-    background-color: aliceblue;
-    width: 720px;
-    margin-top: 80px;
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #7681fc;
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(245, 251, 79);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #5223c0;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(250, 250, 56);
+}
+
+.topnav ul {
+    list-style-type: none;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row::after {/*somente quando a linha ja foi carregada*/
+    content: ""; /*Define como contensora*/
+    display: table; /*Formato de tabela*/
+    clear: both; /*LIMPA CONFIGUARCAO DAS EXTREMIDADES DELA*/
+}
+
+@media screen and (max-width: 600px){
+    .column{
+        width: 100%;
+    }
+}
+
+div.gallery {
     margin-left: auto;
     margin-right: auto;
-    padding: 25px;
-    border-radius: 15px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
 }
