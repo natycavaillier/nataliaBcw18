@@ -179,6 +179,32 @@ input[type=reset]:hover{
     font-weight: bold;
 }
 
+.footerSocial {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.footerSocial > div {
+    width: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footerSocial > div > img {
+    width: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footerSocial img:hover {
+    width: 45px;
+}
+
+.footerSocial > div > p {
+    font-size: 14px;
+    text-align: center;
+}
+
 @media screen and (max-width: 400px) {
     .leftColumn,
     .rightColumn{
